@@ -22,6 +22,5 @@ Route::get('/', function () {
 // Bikin routing ke dashboard pake controller
 Route :: get ('/dashboard', [DashboardController::class,'index']);
 // Bikin routing ke produk pake controller
-Route :: get ('/produk', [ProdukController::class,'index']);
-
-Route :: get ('/template', [DashboardController::class,'index2']);
+Route::get('/produk', [ProdukController::class, 'index'])->name('produk');
+Route::get('/kategori_produk', [ProdukController::class, 'index2'])->name('produk');
