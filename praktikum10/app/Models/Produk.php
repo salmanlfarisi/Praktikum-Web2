@@ -11,6 +11,9 @@ class Produk extends Model
      // Menentukan nama tabel yang terhubung dengan model ini
      protected $table = 'produk';
 
+     // Matiin timestamps
+     public $timestamps = false;
+
      // Tentuin Kolom-kolom yang dapat diisi secara massal
      protected $fillable = [
          'kode',             // Kode produk
